@@ -1,0 +1,16 @@
+{
+  "name": "education-needs-portal",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Persian RTL education needs portal \u2014 HTML, Tailwind CSS and vanilla JavaScript",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/assets/css/styles.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/assets/css/styles.css --watch",
+    "start": "node tools/serve.js",
+    "check": "node --check dist/assets/js/boot.js && node --check dist/assets/js/source.js && node --check dist/assets/js/county-data.js && node --check dist/assets/js/data.js && node --check dist/assets/js/portal.js && node --check dist/assets/js/common.js && node --check dist/assets/js/app.js && node --check dist/assets/js/manager.js && node --check dist/assets/js/inbox.js && node --check tools/serve.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  }
+}
