@@ -6,7 +6,7 @@
     Object.freeze({ username: 'expert', password: 'Expert@1405', role: 'expert', name: 'کارشناس ثبت اطلاعات دبیرستان نمونه', county: 'بجنورد', caseId: 'center-01' }),
     Object.freeze({ username: 'admin', password: 'Admin@1405', role: 'admin', name: 'مدیر سامانه', county: null })
   ]);
-  const routes = { expert: ['index.html', 'needs.html', 'review.html', 'requests.html'], admin: ['admin.html', 'case.html', 'requests.html', 'tables.html', 'content.html'] };
+  const routes = { expert: ['index.html', 'needs.html', 'review.html', 'requests.html'], admin: ['admin.html', 'case.html', 'requests.html', 'tables.html', 'analytics.html', 'content.html'] };
   function user() {
     try {
       const session = JSON.parse(sessionStorage.getItem(KEY));
